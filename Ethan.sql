@@ -22,3 +22,10 @@ CREATE TABLE telephone (
     type BYTE,
     FOREIGN KEY (id_contact) REFERENCES contacts(id)
 );
+
+CREATE TABLE pays (
+    iso_3 VARCHAR(3) PRIMARY KEY,
+    nom VARCHAR(70),
+    iso_2 VARCHAR(2),
+    nationalite VARCHAR(50)
+);
