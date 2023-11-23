@@ -29,3 +29,39 @@ CREATE TABLE pays (
     iso_2 VARCHAR(2),
     nationalite VARCHAR(50)
 );
+
+INSERT INTO `contacts` (`nom`, `prenom`, `date_de_naissance`, `sexe`, `adresse`, `cp`, `ville`, `pays_iso_3`) VALUES
+('Martin', 'Paul', '1985-04-12', 'M', '123 Boulevard de France', '75000', 'Paris', 'FRA'),
+('Bernard', 'Marie', '1990-07-23', 'F', '456 Avenue de la République', '31000', 'Toulouse', 'FRA'),
+('Dubois', 'Jean', '1975-02-15', 'M', '789 Rue du Général', '13000', 'Marseille', 'FRA'),
+('Thomas', 'Julie', '1988-01-06', 'F', '321 Rue de la Liberté', '69000', 'Lyon', 'FRA'),
+('Robert', 'Émilie', '1992-12-11', 'F', '654 Allée des Champs', '44000', 'Nantes', 'FRA'),
+('Richard', 'Luc', '1968-05-30', 'M', '987 Voie du Roi', '67000', 'Strasbourg', 'FRA'),
+('Petit', 'Sophie', '1979-03-22', 'F', '159 Avenue des Fleurs', '33000', 'Bordeaux', 'FRA'),
+('Durand', 'Nicolas', '1982-08-14', 'M', '862 Boulevard Égalité', '59000', 'Lille', 'FRA'),
+('Leroy', 'David', '1986-09-19', 'M', '753 Rue de la Paix', '34000', 'Montpellier', 'FRA'),
+('Moreau', 'Isabelle', '1994-06-07', 'F', '468 Place de la Victoire', '06000', 'Nice', 'FRA');
+
+INSERT INTO `telephone` (`id_contact`, `numero`, `type`) VALUES
+(1, '0123456789', 1),
+(2, '0234567891', 2),
+(3, '0345678912', 1),
+(4, '0456789123', 2),
+(5, '0567891234', 1),
+(6, '0678912345', 2),
+(7, '0789123456', 1),
+(8, '0891234567', 2),
+(9, '0912345678', 1),
+(10, '0123456790', 2);
+
+INSERT INTO `pays` (`iso_3`, `nom`, `iso_2`, `nationalite`) VALUES
+('FRA', 'France', 'FR', 'Française'),
+('ESP', 'Espagne', 'ES', 'Espagnole'),
+('ITA', 'Italie', 'IT', 'Italienne'),
+('DEU', 'Allemagne', 'DE', 'Allemande'),
+('GBR', 'Royaume-Uni', 'GB', 'Britannique'),
+('USA', 'États-Unis', 'US', 'Américaine'),
+('CAN', 'Canada', 'CA', 'Canadienne'),
+('BRA', 'Brésil', 'BR', 'Brésilienne'),
+('ARG', 'Argentine', 'AR', 'Argentine'),
+('CHN', 'Chine', 'CN', 'Chinoise');
